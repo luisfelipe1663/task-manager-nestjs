@@ -29,8 +29,8 @@ async function carregarTarefas() {
         card.innerHTML = `
         <h3>${tarefa.titulo}</h3>
         <p>${tarefa.descricao}</p>
-        <strong>Status:</strong> ${tarefa.status}
-        <div class= "acoes">
+        <strong>Status: </strong> ${tarefa.status}
+        <div class="acoes">
         <p>Atualizar Status:</p>
         <select id="status-${tarefa.id}">
         <option value="pendente" ${tarefa.status === 'pendente' ? 'selected':''}>Pendente</option>

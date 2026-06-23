@@ -2,9 +2,9 @@
 
 const API_URL = 'http://localhost:3000/tarefas';
 
-async function listarTarefas(){
+async function listarTarefasApi(){
     const resposta = await fetch(API_URL);
-    return resposta.json
+    return resposta.json()
 }
 
 async function criarTarefaApi(tarefa){
